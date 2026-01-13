@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería de los Alpes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo.png"  class="logo">
+        </div>
+        
+        <h1>Librería de los Alpes</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#libros">Libros</a></li>
+                <li><a href="#autores">Autores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenidos a nuestra librería</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="imagenes/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.546634045592!2d-122.40146668468186!3d37.791228779757434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f84a5b3db%3A0x62d1e43b0b18dbd!2s1600%20Amphitheatre%20Parkway%2C%20Mountain%20View%2C%20CA%2094090!5e0!3m2!1sen!2sus!4v1604560538772!5m2!1sen!2sus" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section id="libros">
+        <h2>Libros Destacados</h2>
+        <div class="galeria">
+            <img src="imagenes/libro1.png" alt="Libro 1">
+            <img src="imagenes/libro2.png" alt="Libro 2">
+            <img src="imagenes/libro3.png" alt="Libro 3">
+            <img src="imagenes/libro4.png" alt="Libro 4">
+            <img src="imagenes/libro5.png" alt="Libro 5">
+        </div>
+    </section>
+
+    <section id="autores">
+        <h2>Autores Destacados</h2>
+        <div class="autores">
+            <div class="autor">
+                <img src="imagenes/autor1.png" alt="Autor 1">
+                <h3>MIGUEL DE CERVANTES (1547 - 1616)</h3>
+                <p>El manco de Lepanto nos brindó “el mejor trabajo literario jamás escrito”,
+                     según el prestigioso Norwegian Book Club. “Don Quijote”, que se ha convertido en
+                     el libro más editado y traducido de la historia después de la Biblia, es la primera obra de caballerías que desmitificó la tradición caballeresca.
+                     La obra de Cervantes forma parte de la literatura desde hace más de 400 años, pero también entró en la historia del séptimo arte
+                     gracias a un maestro como Orson Welles, que rodó durante catorce años su particular visión de 
+                     España a través de las peripecias de Don Quijote y Sancho Panza.</p>
+            </div>
+            <div class="autor">
+                <img src="imagenes/autor2.png" alt="Autor 2">
+                <h3>JANE AUSTEN (1775 - 1817)</h3>
+                <p>La novelista británica escribió algunos de los grandes clásicos de la literatura inglesa, como “Orgullo y Prejuicio” o “Emma”. 
+                     La gran aceptación por las obras de Austen se produjo también en las películas basadas en sus novelas. “Mansfield Park” y “La abadía de 
+                     Northanger”
+                     llegaron al cine con Patricia Rozema y Andrew Davies al frente.</p>
+            </div>
+            <div class="autor">
+                <img src="imagenes/autor3.png" alt="Autor 3">
+                <h3>VICTOR HUGO (1802 - 1885)</h3>
+                <p>Una de las más grandes obras del siglo XIX surgió de la pluma de este poeta y escritor francés,
+                     que defendió a los oprimidos en la inolvidable “Los Miserables”. Una historia de sueños rotos,
+                      amor no correspondido, pasión, sacrificio y redención que llegó al cine de la mano de Jean-Paul Le Chanois en 1958. 
+                     Tom Hooper la rescató de nuevo hace dos años en forma de musical.</p>
+            </div>
+            
+        </div>
+
+        <h2>Formulario de Inscripción y Satisfacción</h2>
+        <form action="enviar.php" method="post">
+            <fieldset>
+                <legend>Inscripción</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Encuesta de Satisfacción</legend>
+                <label for="satisfaccion">¿Cómo calificaría su experiencia?</label>
+                <select id="satisfaccion" name="satisfaccion" required>
+                    <option value="excelente">Excelente</option>
+                    <option value="bueno">Bueno</option>
+                    <option value="regular">Regular</option>
+                    <option value="malo">Malo</option>
+                </select>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="redes">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2024 Librería de los Alpes. Todos los derechos reservados.</p>
+    </footer>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</body>
+</html>
