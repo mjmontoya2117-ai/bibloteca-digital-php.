@@ -1,2 +1,2 @@
-Proyecto: Bilioteca Digital#
+Proyecto: Bilioteca Digital <rb>
 Este es mi proyecto de grado para el Politecnico de Colombia. Es un sistema para gestionar libros digitales usando PHP y MySQL
